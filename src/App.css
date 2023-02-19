@@ -96,6 +96,7 @@ body{
   border-radius: 50%;
   border: 3px solid var(--primary);
   box-shadow: 0 0 5em #892be279;
+  z-index: 2;
 }
 
 .links{
@@ -137,7 +138,7 @@ body{
 .links .link:hover > h1{
   box-shadow: inset 100px 0 0 0 var(--primary);
   color: white;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .link h1{
@@ -149,8 +150,15 @@ body{
   color: #fff;
   margin: 0 -.25rem;
   padding: 0 .25rem;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out; 
   
+}
+
+.socials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .social{
@@ -162,8 +170,42 @@ body{
 
 .social:hover{  
   filter: drop-shadow( 0 0.5px 0.5em var(--primary));
+  scale: 1.1;
 }
 
+.credits{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.credits h1{
+  font-size: 13px;
+  font-weight: 400;
+  color: #9b9b9b;
+}
+
+.credits h2{
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary);
+} 
+
+a{
+  text-decoration: none;
+}
+
+.source{
+  text-decoration: none;
+  color: #d4d4d4;
+  transition: .1s ease-in-out;
+  z-index: 2;
+}
+
+.source:hoveR{
+  color: var(--primary);
+}
 @media only screen and (max-width: 768px){
   .bgcircle1,
   .bgcircle2{

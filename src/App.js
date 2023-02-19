@@ -3,7 +3,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faFire } from '@fortawesome/free-solid-svg-icons';
+import { faFire , faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 function App() {
@@ -18,20 +18,34 @@ function App() {
             <hr></hr>
           </div>
           <div className='links'>            
-            <div className='link'>              
-              <h1><FontAwesomeIcon icon={faGithub}/> Github</h1>
-            </div>    
-            <div className='link'>
-              <h1><FontAwesomeIcon icon={faYoutube}/> Youtube</h1>  
-            </div>   
-            <div className='link'>
-              <h1><FontAwesomeIcon icon={faFire}/> BurnFX</h1>  
-            </div>                         
+            <a href='https://github.com/risixdzn' target='_blank'>
+              <div className='link'>              
+                <h1><FontAwesomeIcon icon={faGithub}/> Github</h1>
+              </div>
+            </a>    
+
+            <a href='https://www.youtube.com/@risix' target='_blank' >
+              <div className='link'>
+                <h1><FontAwesomeIcon icon={faYoutube}/> Youtube</h1>  
+              </div>   
+            </a>
+
+            <a href='https://twitter.com/burnfxbr' target='_blank'>
+              <div className='link'>
+                <h1><FontAwesomeIcon icon={faFire}/> BurnFX</h1>  
+              </div> 
+            </a>
+                                    
           </div>
-          <div className='socials'>
-            <a className='social'><FontAwesomeIcon icon={faInstagram}/></a>
-            <a className='social'><FontAwesomeIcon icon={faLinkedin}/></a>
-            <a className='social'><FontAwesomeIcon icon={faEnvelope}/></a>
+          <div className='socials'>    
+                    
+            <a href='https://instagram.com/ricardo.rsx' target='_blank'><div className='social'><FontAwesomeIcon icon={faInstagram}/></div></a>
+            <a href='https://linkedin.com' target='_blank'><div className='social'><FontAwesomeIcon icon={faLinkedin}/></div></a>
+            <a href='mailto:contatorisix@gmail.com' target='_blank'><div className='social'><FontAwesomeIcon icon={faEnvelope}/></div></a>
+          </div>
+          <div className='credits'>
+            <h1>Orgulhosamente feito por <a className='source' href='https://github.com/risixdzn/mylinks' target='_blank'><FontAwesomeIcon icon={faGithub}/><b>risixdzn</b></a></h1>
+            <h2></h2>
           </div>
         </div>        
       </div>      
