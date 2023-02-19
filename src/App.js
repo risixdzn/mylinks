@@ -1,9 +1,10 @@
 import './App.css';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { fab, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { fab, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFire } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 function App() {
   return (
@@ -27,7 +28,12 @@ function App() {
               <h1><FontAwesomeIcon icon={faFire}/> BurnFX</h1>  
             </div>                         
           </div>
-        </div>
+          <div className='socials'>
+            <a className='social'><FontAwesomeIcon icon={faInstagram}/></a>
+            <a className='social'><FontAwesomeIcon icon={faLinkedin}/></a>
+            <a className='social'><FontAwesomeIcon icon={faEnvelope}/></a>
+          </div>
+        </div>        
       </div>      
 
       <div class="bgcircle1"></div>
