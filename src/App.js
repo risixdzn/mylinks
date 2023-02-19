@@ -1,8 +1,10 @@
 import './App.css';
+import React from 'react';
+import Tilt from 'react-vanilla-tilt'
 
 function App() {
   return (
-    <div className="app">
+    <div className="app" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
       <div className="container">
         <div className="info">
           <div className="profile">
@@ -10,7 +12,14 @@ function App() {
             <h1>@ricardo.rsx</h1>
             <h2>Editor de vídeo e desenvolvedor front-end.</h2>
             <hr></hr>
-          </div>          
+          </div>
+          <div className='links'>
+            <Tilt options={{ scale: 2, glare: 1.8 }} style={{width: 300, backgroundColor: "#000",}}>
+              <div className='link'>
+                <h1>Github</h1>
+              </div>
+            </Tilt>            
+          </div>
         </div>
       </div>      
 
