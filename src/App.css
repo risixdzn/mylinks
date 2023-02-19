@@ -11,6 +11,8 @@ body{
   background-color: var(--dark);
   overflow: hidden;
   font-family: Poppins;
+  width: 100vw;
+  height: 100vh;
 }
 
 :root{
