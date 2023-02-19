@@ -1,6 +1,9 @@
 import './App.css';
 import React from 'react';
-import Tilt from 'react-vanilla-tilt'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFire } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
@@ -13,12 +16,16 @@ function App() {
             <h2>Editor de vídeo e desenvolvedor front-end.</h2>
             <hr></hr>
           </div>
-          <div className='links'>
-            <Tilt options={{ scale: 2, glare: 1.8 }} style={{width: 300, backgroundColor: "#000",}}>
-              <div className='link'>
-                <h1>Github</h1>
-              </div>
-            </Tilt>            
+          <div className='links'>            
+            <div className='link'>              
+              <h1><FontAwesomeIcon icon={faGithub}/> Github</h1>
+            </div>    
+            <div className='link'>
+              <h1><FontAwesomeIcon icon={faYoutube}/> Youtube</h1>  
+            </div>   
+            <div className='link'>
+              <h1><FontAwesomeIcon icon={faFire}/> BurnFX</h1>  
+            </div>                         
           </div>
         </div>
       </div>      
