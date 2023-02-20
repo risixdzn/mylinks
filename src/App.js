@@ -47,6 +47,9 @@ function App() {
             <h1>Orgulhosamente feito por <a className='source' href='https://github.com/risixdzn/mylinks' target='_blank'><FontAwesomeIcon icon={faGithub}/><b>risixdzn</b></a></h1>
             <h2></h2>
           </div>
+          
+          <div class="bgcircle1"></div>
+          <div class="bgcircle2"></div>
         </div>        
       </div>      
 
