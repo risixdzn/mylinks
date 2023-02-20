@@ -50,8 +50,6 @@ function App() {
         </div>        
       </div>      
 
-      <div class="bgcircle1"></div>
-      <div class="bgcircle2"></div>
     </div>
   );
 }
