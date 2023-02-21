@@ -6,7 +6,12 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFire , faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
-function App() {
+
+function App() {  
+  
+  let lastModified = "";
+  lastModified = document.lastModified;  
+  
   return (
     <div className="app" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
       <div className="container">
@@ -34,8 +39,7 @@ function App() {
               <div className='link'>
                 <h1><FontAwesomeIcon icon={faFire}/> BurnFX</h1>  
               </div> 
-            </a>
-                                    
+            </a>                                    
           </div>
           <div className='socials'>    
                     
@@ -45,11 +49,11 @@ function App() {
           </div>
           <div className='credits'>
             <h1>Orgulhosamente feito por <a className='source' href='https://github.com/risixdzn/mylinks' target='_blank'><FontAwesomeIcon icon={faGithub}/><b>risixdzn</b></a></h1>
-            <h2></h2>
+            <h2>Modificado em: {lastModified}</h2>
           </div>
           
-          <div class="bgcircle1"></div>
-          <div class="bgcircle2"></div>
+          <div className="bgcircle1"></div>
+          <div className="bgcircle2"></div>
         </div>        
       </div>      
 

@@ -219,12 +219,13 @@ body{
   font-size: 13px;
   font-weight: 400;
   color: #9b9b9b;
+  line-height: 25px;
 }
 
 .credits h2{
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
-  color: var(--primary);
+  color: #9b9b9b;
 } 
 
 a{
