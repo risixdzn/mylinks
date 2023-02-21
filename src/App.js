@@ -19,7 +19,7 @@ function App() {
           <div className="profile">
             <div className="piccircle"></div>
             <h1>@ricardo.rsx</h1>
-            <h2>Editor de vídeo e desenvolvedor front-end.</h2>
+            <h2>Editor de vídeo e desenvolvedor front-end jr.</h2>
             <hr></hr>
           </div>
           <div className='links'>            
