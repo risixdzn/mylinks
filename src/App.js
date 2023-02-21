@@ -9,8 +9,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 function App() {  
   
-  let lastModified = "";
-  lastModified = document.lastModified;  
+  let lastModified = document.lastModified; 
   
   return (
     <div className="app" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
